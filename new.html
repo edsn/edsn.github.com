@@ -6,7 +6,15 @@
 </head>
 <body>
 <div id="disqus_thread"></div>
-<script src="http://edsn.disqus.com/embed.js"></script>
+  <script>
+    (function(){
+      var scr = document.createElement('script');
+      scr.type="text/javascript";
+      scr.async = true;
+      scr.src="http://edsn.disqus.com/embed.js";
+      document.getElementsByTagName('head')[0].appendChild(scr);
+    })();
+  </script>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </body>
 </html>
