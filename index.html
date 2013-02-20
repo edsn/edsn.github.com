@@ -1,21 +1,130 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>小学。。年轻。。聊聊</title>
+  <link rel="stylesheet" href="bt.css">
 </head>
 <body>
-	<div id="disqus_thread"></div>
-	<script>
-		(function(){
-			var scr = document.createElement('script');
-			scr.type="text/javascript";
-			scr.async = true;
-			scr.src="http://edsn.disqus.com/embed.js";
-			document.getElementsByTagName('head')[0].appendChild(scr);
-		})();
-	</script>
-	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  <style type="text/css">
+    h1{
+      margin:20px 0;
+    }
+    h1 em{
+    	font-size:14px;
+    	margin-left:20px;
+    	font-style:normal;
+    	color: gray;
+    }
+    .main-body{
+      width: 1000px;
+      margin:auto;
+    }
+    .list-data{
+      width:998px;
+      border:solid 1px #ddd;  
+      margin-bottom:40px;
+    }
+    .list-data thead th{
+      line-height:40px;
+      font-weight:700;
+      font-size:16px;
+      font-family:"微软雅黑";
+      color:#3776b4;
+      background:#eee;
+
+    }
+    .list-data tbody .name,
+     .list-data tbody .tel{
+        font-weight:700;
+        font-size:14px;
+     }
+    .list-data tbody td{
+      text-align:center;
+      line-height:30px;
+      border:solid 1px #eee;
+    }
+    .list-data tbody .gray{
+      background:#fbfbfb;
+    }
+    .info{
+      margin:20px;
+      color:red;
+      font-size:14px;
+    }
+  </style>
+  <div class="main-body">
+    <h1>小学。。年轻。。聊聊<em>通讯录</em></h1>
+  <table class="list-data">
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>联系方式</th>
+        <th>当前工作（学习）所在地</th>
+        <th>从事行业（专业）</th>
+        <th>婚否</th>
+      </tr>
+    </thead>
+    <tbody id="J_List">
+    	<tr>
+	        <td class="name">高明杰</td>
+	        <td class="tel">18817821688</td>
+	        <td>上海</td>
+	        <td>临床医学</td>
+	        <td>未婚</td>
+	    </tr>		
+      	<tr class="gray">
+	        <td class="name">蒋先进</td>
+	        <td class="tel">18975199373</td>
+	        <td>南昌</td>
+	        <td>布吉岛</td>
+	        <td>未婚</td>
+      	</tr>
+	    <tr>
+	        <td class="name">蒋春燕</td>
+	        <td class="tel">18266847952</td>
+	        <td>杭州</td>
+	        <td>IT</td>
+	        <td>未婚</td>
+	    </tr>
+	    <tr class="gray">
+	    	<td class="name">马言</td>
+	        <td class="tel">18266847952</td>
+	        <td>杭州</td>
+	        <td>学妹</td>
+	        <td>未婚</td>
+	    </tr>
+	    <tr>
+	        <td class="name">张旭</td>
+	        <td class="tel">15056358115</td>
+	        <td>布吉岛</td>
+	        <td>布吉岛</td>
+	        <td>未婚</td>
+	    </tr>
+	    <tr class="gray">
+	        <td class="name">周小将</td>
+	        <td class="tel">15158116070</td>
+	        <td>杭州</td>
+	        <td>IT</td>
+	        <td>未婚</td>
+	    </tr>
+    </tbody>    
+  </table>
+  <h2 class="info">信息尚未完善，麻烦各位把自己了解到的人信息填写到下面，我会定期收集整理到上面表格</h2>
+  <div id="disqus_thread"></div>
+  </div>
+  
+  <script>
+    (function(){
+      var scr = document.createElement('script');
+      scr.type="text/javascript";
+      scr.async = true;
+      scr.src="http://edsn.disqus.com/embed.js";
+      document.getElementsByTagName('head')[0].appendChild(scr);
+    })();
+  </script>
+  
+  
 
 </body>
 </html>
