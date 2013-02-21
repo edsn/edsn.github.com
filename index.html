@@ -52,6 +52,12 @@
       color:red;
       font-size:14px;
     }
+    .list-data tfoot td{
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+    }
   </style>
   <div class="main-body">
     <h1>小学。。年轻。。聊聊<em>通讯录</em></h1>
@@ -73,7 +79,7 @@
 	        <td>临床医学</td>
 	        <td>未婚</td>
 	    </tr>		
-      	<tr class="gray">
+      	<tr>
 	        <td class="name">蒋先进</td>
 	        <td class="tel">18975199373</td>
 	        <td>南昌</td>
@@ -87,28 +93,45 @@
 	        <td>IT</td>
 	        <td>未婚</td>
 	    </tr>
-	    <tr class="gray">
+	    <tr>
 	    	<td class="name">马言</td>
 	        <td class="tel">18266847952</td>
 	        <td>杭州</td>
 	        <td>学妹</td>
 	        <td>未婚</td>
 	    </tr>
+      <tr>
+        <td class="name">马言</td>
+          <td class="tel">18266847952</td>
+          <td>杭州</td>
+          <td>学妹</td>
+          <td>未婚</td>
+      </tr>
 	    <tr>
-	        <td class="name">张旭</td>
-	        <td class="tel">15056358115</td>
-	        <td>布吉岛</td>
-	        <td>布吉岛</td>
+	        <td class="name">阮胜</td>
+	        <td class="tel">155542200</td>
+	        <td>青岛</td>
+	        <td>机械</td>
 	        <td>未婚</td>
 	    </tr>
-	    <tr class="gray">
+	    <tr>
 	        <td class="name">周小将</td>
 	        <td class="tel">15158116070</td>
 	        <td>杭州</td>
 	        <td>IT</td>
 	        <td>未婚</td>
 	    </tr>
-    </tbody>    
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"></td>
+        <td colspan="2">
+          <a href="list.csv">
+            点此导出表格
+          </a>
+        </td>
+      </tr>
+    </tfoot>   
   </table>
   <h2 class="info">信息尚未完善，麻烦各位把自己了解到的人信息填写到下面，我会定期收集整理到上面表格。留言无需注册，仅填写姓名及邮箱即可。</h2>
   <div id="disqus_thread"></div>
@@ -121,6 +144,18 @@
       scr.async = true;
       scr.src="http://edsn.disqus.com/embed.js";
       document.getElementsByTagName('head')[0].appendChild(scr);
+    })();
+  </script>
+  <script>
+    (function(){
+      var elParent = document.getElementById('J_List'),
+          elLists = elParent.getElementsByTagName('tr');
+      for(var i=0,len = elLists.length;i<len;i++){
+        if(i % 2 === 1){
+          elLists[i].className = 'gray';
+        }
+      }
+
     })();
   </script>
   
